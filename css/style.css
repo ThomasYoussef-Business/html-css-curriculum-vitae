@@ -8,7 +8,7 @@
     --lighter-bg: hsl(var(--bg-h), var(--bg-s), calc(var(--bg-l) * 1.2));
     --darker-bg: hsl(var(--bg-h), var(--bg-s), calc(var(--bg-l) * 0.8));
 
-
+    font-family: 'Courier New', Courier, monospace;
     background-color: var(--bg-color); /* Colori vari sono impostati qua */
     color: rgb(229, 229, 229); /* Il colore del testo è preso da qui */
 }
@@ -50,7 +50,7 @@ main > div {
 
 /* -------------- Sezione per formattare il testo della pagina -------------- */
 div.h2-categorie > h2,
-#contenitore-foto > hr{
+div > hr{
     color: var(--accent-color);
 }
 
@@ -62,4 +62,9 @@ div.h2-h3-sottocategorie > h3 {
 
 p {
     margin: 0%;
+}
+
+div > sub {
+    display: block;
+    text-align: center;
 }
