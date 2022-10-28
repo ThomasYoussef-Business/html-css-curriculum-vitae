@@ -1,13 +1,10 @@
 :root {
-    --main-color: goldenrod;
-    background-color: rgb(29, 37, 62);
-    color: rgb(229, 229, 229);
+    --accent-color: goldenrod;
+    background-color: rgb(29, 37, 62); /* Colori vari sono impostati qua */
+    color: rgb(229, 229, 229); /* Il colore del testo è preso da qui */
 }
 
-p {
-    margin: 0%;
-}
-
+/* ----------- Sezione per formattare l'elemento main della pagina ---------- */
 main {
     width: 50%;
     margin: auto;
@@ -18,13 +15,13 @@ main > div {
     padding: 1em;
 }
 
+/* ------ Sezione per formattare l'header con foto profilo della pagina ----- */
 #contenitore-foto {
     padding-bottom: 0%;
     background-color: rgb(48, 61, 101);
 }
 
 #contenitore-foto > * {
-    /* margin: auto; */
     text-align: center;
 }
 
@@ -37,11 +34,16 @@ main > div {
     margin: auto 30%;
 }
 
+/* -------------- Sezione per formattare il testo della pagina -------------- */
 div.h2-categorie > h2,
 #contenitore-foto > hr{
-    color: var(--main-color);
+    color: var(--accent-color);
 }
 
 div.h2-h3-sottocategorie > h3 {
     font-style: italic;
+}
+
+p {
+    margin: 0%;
 }
