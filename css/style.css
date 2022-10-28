@@ -47,6 +47,8 @@ div.h2-categorie > h2,
 
 div.h2-h3-sottocategorie > h3 {
     font-style: italic;
+    color: var(--accent-color);
+    filter: brightness(0.75)
 }
 
 p {
