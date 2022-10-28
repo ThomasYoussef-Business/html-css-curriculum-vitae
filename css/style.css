@@ -1,6 +1,15 @@
 :root {
     --accent-color: goldenrod;
-    background-color: rgb(29, 37, 62); /* Colori vari sono impostati qua */
+    /* -------------- Valori per un colore background dinamico -------------- */
+    --bg-h: 225;
+    --bg-s: 36%;
+    --bg-l: 18%;
+    --bg-color: hsl(var(--bg-h), var(--bg-s), var(--bg-l));
+    --lighter-bg: hsl(var(--bg-h), var(--bg-s), calc(var(--bg-l) * 1.2));
+    --darker-bg: hsl(var(--bg-h), var(--bg-s), calc(var(--bg-l) * 0.8));
+
+
+    background-color: var(--bg-color); /* Colori vari sono impostati qua */
     color: rgb(229, 229, 229); /* Il colore del testo è preso da qui */
 }
 
@@ -8,7 +17,7 @@
 main {
     width: 50%;
     margin: auto;
-    background-color: rgb(23, 30, 49);
+    background-color: var(--darker-bg);
 }
 
 main > div {
@@ -21,7 +30,7 @@ main > div {
     flex-direction: column;
     align-items: center;
     padding-bottom: 0%;
-    background-color: rgb(48, 61, 101);
+    background-color: var(--lighter-bg);
 }
 
 #contenitore-foto > * {
